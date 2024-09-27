@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Next.js Boilerplate",
-  description: "A boilerplate for Next.js projects.",
+  title: 'Next.js Boilerplate',
+  description: 'A boilerplate for Next.js projects.',
 };
 
 export default function RootLayout({
@@ -13,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-      </body>
+      <body className={'antialiased'}>{children}</body>
     </html>
   );
 }
